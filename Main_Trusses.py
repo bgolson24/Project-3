@@ -47,13 +47,13 @@ def PlaneTrussStiffness( input_geometry):
     F = PostprocessReactions(K, d, F, n_unknowns, nodes)
 
     # Compute internal member loads
-    # ComputeMemberForces()
+    ComputeMemberForces()
     
     # Compute normal stresses of members
-    # ComputeNormalStresses()
+    ComputeNormalStresses()
     
     # Compute the critical buckling load of the members
-    # ComputeBucklingLoad()    
+    ComputeBucklingLoad()    
     
     # output data for sanity check
     for node in nodes:
